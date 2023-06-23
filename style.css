@@ -1,0 +1,265 @@
+/* this block of code is made of basic css just changing fonts and colors  */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+h1,
+h2,
+h3,
+h4,
+li {
+  font-family: sans-serif;
+  color: #444;
+  font: 24px;
+}
+
+
+h1 {
+  
+  font-size: 50px;
+  color: #1098ad;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {color: #1098ad ;text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;}
+
+h3{color: #1098ad;
+font-size: 40px;}
+
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+header {
+  background-color: rgba(189, 219, 236, 0.884);
+}
+
+
+
+/* there is a go to top button after every blog this just fixes its font */
+  
+.gototop{font-size: 30px;}
+  
+img { width: 100%; }
+
+
+/* for the video on week 7 */
+
+.video-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* this peace of code change the color of hyperlinks when you hover over it and when you press on it */
+
+a:visited{color:#1098ad ;}
+
+a:link{color:#1098ad ;
+text-decoration: none;}
+
+a:hover{color: orangered
+  ;font-weight: bold;
+text-decoration: underline orangered;}
+
+/* create the grid layout with a class atribute */
+
+.banner {grid-area: banner;}
+.menu {grid-area: menu;}
+nav {grid-area: nav;}
+table {grid-area: table;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+
+#wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+   "banner"
+   "menu"
+   "nav"
+   "table"
+   "main"
+   "aside"
+   "footer";
+}
+
+@media (min-width: 50em) {
+  #wrapper {
+    grid-template-columns: 3fr 6fr;
+    grid-template-areas: 
+      "banner  banner"
+      "menu  menu"
+      "nav  table"
+      "aside  main"
+      "footer  footer";
+  }
+}
+
+
+@media (min-width: 60em) {
+  #wrapper {
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas: 
+      "banner  banner  banner"
+      "menu  menu  menu"
+      "nav  table  aside"
+      "nav  main  aside"
+      "footer  footer  footer";
+   }
+}
+
+
+
+/* this peace of code changes the layout of the menue aka the nav bar to make it compatable with mobile phones */
+.menu ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu li
+{
+  display: block; /*display in a vertical column*/
+  margin: 0;
+}
+.menu a
+{
+  display: block;
+  padding: .7em 1.25em .7em 1.25em;
+  text-decoration: none;
+  border-bottom: 1px solid gray;}
+
+ 
+/* Flexbox layout for the totorial page */
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex; 
+  }
+  .card-content {
+    background-color: #f1f6f7;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #1098ad;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 1.25em 1.25em 0.3em 0;
+    padding: 1em;
+  }
+  
+/*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em){
+  .card { width: 50%; }
+}
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) {
+  .card { width: 33.33%; }
+}
+
+
+.media	{
+  margin: 0;
+  padding: 0;
+}
+.media li	{
+  margin: 0;
+  padding: 0;
+}
+
+
+  
+/* contact me page form*/
+
+input[type=text], select, #hi {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 100%;
+  background-color: #1098ad;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0b7788;
+}
+
+#form1{
+  border-radius: 5px;
+  background-color: #f1f6f7;
+  padding: 20px;
+}
+
+
+
+/* table on index page */
+
+
+
+
+th, td
+{
+	font-size: 90%;
+	padding: .2em 1em .2em 1em;
+	border: 1px solid #1098ad;
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+  background-color: #f1f6f7;
+  
+}
+
+th, .tdtime {background-color: #b6e6f0;}
+
+.facetoface {background-color: #c1dabf;}
+.onlineclass {background-color: #d6c7d4;}
+
+td:empty {
+	background-image: url(images/td_pattern.jpg);
+	background-repeat: repeat;
+}
+
+caption	{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.2em 0 .5em 0;
+	text-transform: uppercase;
+  color: #1098ad ;
+  font-size: 40px
+}
+
+	/* sticky element tutorial page*/
+
+  #box1,#box2, #box3 { background-color: #f1f6f7;position: sticky; top: 0%;}
+
