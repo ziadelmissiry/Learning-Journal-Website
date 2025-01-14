@@ -1,5 +1,2 @@
 
-
-
-
-![image alt] (https://github.com/ziadelmissiry/Learning-Journal-Website/blob/main/Learning%20Journal%20template%20-%20Profile%201%20-%20Microsoft%E2%80%8B%20Edge%2014_01_2025%2023_15_51.png?raw=true)
+![Learning Journal template - Profile 1 - Microsoft​ Edge 14_01_2025 23_15_51](https://github.com/user-attachments/assets/843a82ec-31a2-4990-9471-881a2106ef48)
